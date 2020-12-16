@@ -1,0 +1,2 @@
+class FoodRack < ApplicationRecord
+end

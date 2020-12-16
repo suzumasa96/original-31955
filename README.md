@@ -6,8 +6,8 @@
 | name              | string     |  null: false, unique:true |
 | first_name_kana   | string     |                           |
 | last_name_kana    | string     |                           |
-| age               | integer    |  null: false              |
-| gender            | integer    |  null: false              |
+| age               | integer    |                           |
+| gender            | integer    |                           |
 | email             | string     |  null: false, unique:true |
 | encrypted_password| string     |  null:false               |
 
