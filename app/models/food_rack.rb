@@ -1,5 +1,6 @@
 class FoodRack < ApplicationRecord
   belongs_to :user
   has_one_attached :picture
-  #validatesなし　全て任意
+
+  validates :memo, presence: true
 end
