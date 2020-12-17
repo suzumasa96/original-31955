@@ -130,7 +130,7 @@
         <% @food_racks.each do |food_rack|%>
           <li class='list'>
 
-            <%= link_to "#" do %>
+            <%= link_to food_rack_path(food_rack.id),method: :get do %>
             <div class='item-img-content'>
               <%= image_tag food_rack.picture, class: "item-img" %>
 
