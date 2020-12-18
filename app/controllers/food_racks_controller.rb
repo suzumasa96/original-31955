@@ -1,9 +1,9 @@
 class FoodRacksController < ApplicationController
-
+  before_action :authenticate_user!, except: [:index]
   before_action :set_food_rack, only: [:edit, :show, :update, :destroy]
 
   def index
-    @food_racks = FoodRack.all
+    @food_racks = FoodRack.order("created_at DESC")
   end
 
   def new

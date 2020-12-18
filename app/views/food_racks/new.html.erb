@@ -44,13 +44,21 @@
           カテゴリー
           <span class="indispensable">任意</span>
         </div>
-        <%= f.collection_select(:hoge, [], :hoge, :hoge, {}, {class:"select-box", id:"item-category"}) %>
+        <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
         <div class="weight-bold-text">
           賞味期限・消費期限
           <span class="indispensable">任意</span>
         </div>
-        <%= f.collection_select(:hoge, [], :hoge, :hoge, {}, {class:"select-box", id:"item-sales-status"}) %>
+        <%= f.date_field :created_at, class: 'select-box' %>
       </div>
+
+
+        <%# <div class="weight-bold-text">
+          賞味期限・消費期限
+          <span class="indispensable">任意</span>
+        </div>
+        <%= f.collection_select(:hoge, [], :hoge, :hoge, {}, {class:"select-box", id:"item-sales-status"}) >
+      </div> %>
     </div>
 
     <%# 配送について %>
