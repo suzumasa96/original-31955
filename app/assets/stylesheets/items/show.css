@@ -1,4 +1,7 @@
 /* 商品の概要 */
+@media (max-width: 599px) {
+
+}
 
 .item-show {
   background-color: #f8f8f8;
