@@ -1,3 +1,6 @@
 <header class='second-header'>
-  <%= link_to "FOODS REMIND", "/" %><%#= link_to image_tag("furima-logo-color.png", class:"second-logo"), "/" %>
+  <%= link_to(root_path, class: 'logo2-btn') do %>
+    <span class='logo2-btn-text'>FOODS REMIND</span>
+    <%= image_tag 'information-160948__480吹き出し.webp' , size: '185x50' ,class: "logo2-btn-icon" %>
+  <% end %>
 </header>

@@ -122,7 +122,7 @@
 
   <%# 商品一覧 %>
   <div class='item-contents'>
-    <h2 class='title'>食材一覧</h2>
+    <h2 class='title'>食材リスト</h2>
     <%= link_to '冷蔵庫', "#", class: "subtitle" %>
     <ul class='item-lists'>
 
@@ -144,10 +144,10 @@
               </h3>
               <div class='item-price'>
                 <span><%= food_rack.memo %><br><%= food_rack.category_id %><br><%= food_rack.food_deadline %></span>
-                <div class='star-btn'>
-                  <%= image_tag "star.png", class:"star-icon" %>
+                <%#<div class='star-btn'>
+                  <%= image_tag "star.png", class:"star-icon" >
                   <span class='star-count'>0</span>
-                </div>
+                </div> %>
               </div>
             </div>
             <% end %>
@@ -175,8 +175,8 @@
     </ul>
   </div>
 </div>
-<%= link_to(new_food_rack_path, class: 'purchase-btn') do %>
-  <span class='purchase-btn-text'>食材の追加</span>
-  <%= image_tag 'tomato-4984619_1280.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+<%= link_to(new_food_rack_path, class: 'save-btn') do %>
+  <span class='save-btn-text'>食材の追加</span>
+  <%= image_tag 'tomato-4984619_1280.png' , size: '185x50' ,class: "save-btn-icon" %>
 <% end %>
 <%= render "shared/footer" %>

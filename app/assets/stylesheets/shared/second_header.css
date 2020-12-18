@@ -8,7 +8,22 @@
   justify-content: center;
 }
 
-.second-logo {
-  width: 185px;
-  height: 49px;
+.logo2-btn {
+  width: 40vw ;
+  align-items: center;
+  background: green;
+  text-align: center;
+
+}
+
+.logo2-btn-text {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.logo2-btn-icon {
+  width: 30%;
 }

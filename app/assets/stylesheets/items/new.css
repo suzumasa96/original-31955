@@ -1,9 +1,5 @@
 /* border-bottom: 1px solid #eee; */
 
-@media (max-width: 599px) {
-
-}
-
 .items-sell-contents {
   background-color: #f5f5f5;
   font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
@@ -14,9 +10,15 @@
   min-width: 500px;
 }
 
+
 .items-sell-header {
-  padding: 5vh 0;
+  width: 40vw;
+  background: green;
   text-align: center;
+  border-radius: 100%;
+  bottom: 32px;
+  right: 32px;
+  padding: 5vh 0;
 }
 
 .items-sell-main {
@@ -34,7 +36,17 @@
 
 /* 共通 */
 .indispensable {
-  background: #ea352d;
+  background: green;
+  margin-left: 8px;
+  padding: 3px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.indispensable1 {
+  background:orange;
   margin-left: 8px;
   padding: 3px;
   border-radius: 2px;
@@ -185,8 +197,8 @@
 }
 
 .sell-btn {
-  background: #ea352d;
-  border: 1px solid #ea352d;
+  background: orange;
+  border: 1px solid black;
   color: #fff;
   width: 100%;
   height: 50px;

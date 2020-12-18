@@ -1,7 +1,9 @@
 <div class="items-sell-contents">
   <header class="items-sell-header">
-    <%= link_to "FOODS REMIND", "/" %>
-
+    <%= link_to root_path do %>
+      <span class='logo-btn-text'>FOODS REMIND</span>
+      <%= image_tag 'information-160948__480吹き出し.webp' , size: '185x50' %>
+    <% end %>
   </header>
   <div class="items-sell-main">
     <h2 class="items-sell-title">食材の情報を入力</h2>
@@ -41,8 +43,8 @@
       <div class="weight-bold-text">詳細</div>
       <div class="form">
         <div class="weight-bold-text">
-          カテゴリー
-          <span class="indispensable">任意</span>
+          保存場所
+          <span class="indispensable1">必須</span>
         </div>
         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
         <div class="weight-bold-text">
