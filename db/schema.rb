@@ -34,12 +34,12 @@ ActiveRecord::Schema.define(version: 2020_12_16_102742) do
   end
 
   create_table "food_racks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id", null: false
     t.string "food_name"
     t.string "picture"
     t.integer "category_id"
     t.integer "food_deadline"
     t.text "memo"
-    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_food_racks_on_user_id"
