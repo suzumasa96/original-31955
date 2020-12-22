@@ -4,6 +4,7 @@
 
 .top-page-header {
   width: 100vw;
+  background-color: green;
   padding: 8vh 5vw;
   display: flex;
   flex-direction: column;
@@ -16,7 +17,7 @@
 }
 
 .logo-btn {
-  width: 90vw;
+  width: 35vw;
   margin-right: 10vw;
   background: orange;
   text-align: center;
@@ -35,11 +36,11 @@
 }
 
 .logo-btn-icon {
-  width: 60%;
+  width: 50%;
 }
 
 .search-form {
-  width: 70vw;
+  width: 50vw;
   height: 10vh;
   display: flex;
   margin-bottom: 5px;
@@ -49,13 +50,14 @@
   width: 100%;
   height: 10vh;
   padding-left: 10px;
+  background-color: white;
 }
 
 .search-button {
-  width: 5vh;
+  width: 5vw;
   border: 0;
   cursor: pointer;
-  background-color: #3ccace;
+  background-color: orange;
   padding: 8px;
 }
 
@@ -67,42 +69,25 @@
   font-size: 25px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   width: 100%;
   padding: 1vh 0;
-}
-
-.lists-left {
-  display: flex;
-  min-width: 200px;
-
 }
 
 .lists {
   display: flex;
   list-style: none;
   justify-content: space-around;
-  margin: 10vh 5vw;
+  margin-top: 10vh;
+  margin-left: 50vw;
 }
 
-.category-list {
+.user-name {
   text-decoration: none;
   color: #333333;
   font-weight: bold;
-  margin-right: 5vw;
+  margin-right: 10vw;
   background: orange;
-  border-radius: 50%;
-  right: 10px;
-  padding: 15px;
-}
-
-.user-nickname {
-  text-decoration: none;
-  color: #333333;
-  font-weight: bold;
-  margin-right: 5vw;
-  background: orange;
-  border-radius: 50%;
+  border-radius: 4%;
   right: 10px;
   padding: 15px;
 }
@@ -112,10 +97,9 @@
   text-decoration: none;
   color: #333333;
   font-weight: bold;
-  margin-right: 5vw;
   background: orange;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 4%;
   bottom: 32px;
   right: 10px;
   padding: 15px;
@@ -125,11 +109,12 @@
   text-decoration: none;
   line-height: 32px;
   margin-right: 5vw;
-  color: #333333;
-  margin-right: 5vw;
-  background: orange;
+  color: black;
+  font-weight: bold;
+  margin-right: 10vw;
+  background: white;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 4%;
   bottom: 32px;
   right: 10px;
   padding: 15px;
@@ -137,13 +122,94 @@
 
 .sign-up {
   text-decoration: none;
-  color: #333333;
-  margin-right: 5vw;
-  background: orange;
+  color: black;
+  font-weight: bold;
+  background:white;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 4%;
   bottom: 32px;
   right: 10px;
   padding: 15px;
+}
+
+@media (max-width: 800px) {
+  .top-page-header {
+    width: 100vw;
+    background-color: green;
+  }
+  .logo-btn {
+    width: 25vw;
+    height: 25vh;
+    background: orange;
+    border-radius: 4%;
+  }
+  
+  .logo-btn-text {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    }
+  
+  .logo-btn-icon {
+    width: 30%;
+  }
+  
+  .search-form {
+    width: 25vw;
+    height: 10vh;
+  }
+  
+  .search-form>.input-box {
+    width: 20vw;
+    height: 10vh;
+    background-color: white;
+  }
+  
+  .search-button {
+    width: 7vw;
+    cursor: pointer;
+    background-color: orange;
+  }
+  
+  .search-icon {
+    width: 50%;
+  }
+  
+  .nav {font-size: 11px;
+    display: flex;
+   }
+  
+  .user-name {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: orange;
+    border-radius: 4%;
+  }
+  
+  
+  .logout {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: orange;
+    border-radius: 4%;
+  }
+  
+  .login {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background: orange;
+    border-radius: 4%;
+  }
+  
+  .sign-up {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background: orange;
+    border-radius: 4%;
+  }
 }
 

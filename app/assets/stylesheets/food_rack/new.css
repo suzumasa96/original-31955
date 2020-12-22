@@ -154,3 +154,7 @@
 .inc {
   font-size: 13px;
 }
+
+@media (max-width: 400px) {
+  
+}

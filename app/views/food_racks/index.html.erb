@@ -12,8 +12,7 @@
     <h2 class='title'>食材リスト</h2>
     <ul class='foodracks-lists'>
       <% if user_signed_in? %>
-        <% if @food_racks.present? %>
-          <% @food_racks.each do |food_rack|%>
+        <% @food_racks.each do |food_rack|%>
             <% if current_user.id == food_rack.user_id%>
               <li class='list'>
 
@@ -43,25 +42,22 @@
               </li>
             <% end %>
           <% end %>
-        <% else %>
+      <% else %>
           <li class='list'>
             <%= link_to '#' do %>
-            <%= image_tag "チキンラーメン.jpg", class: "item-img" %>
-            <div class='item-info'>
-              <h3 class='item-name'>
-                食材を登録してね！
+            <%= image_tag "チキンラーメン.jpg", class: "food-img" %>
+            <div class='food-info'>
+              <h3 class='food-name'>
+                食材を登録してください
               </h3>
-              <div class='item-price'>
-                <span>○月購入<br>冷蔵庫<br>賞味期限</span>
-                <div class='star-btn'>
-                  <%= image_tag "star.png", class:"star-icon" %>
-                  <span class='star-count'>0</span>
-                </div>
+              <div class='food-memo'>
+                メモ:<%= "美味い" %>
+                <br>保存場所:<%= "食材棚A" %>
+                <br>賞味期限・消費期限:<%= "２月６日" %>
               </div>
             </div>
             <% end %>
           </li>
-        <% end %>
       <% end %>
     </ul>
   </div>

@@ -1,0 +1,188 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background:#f8f8f8;
+}
+
+.title-contents {
+  width: 100vw;
+  background-image: image-url('wood-2142309_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15vh 15vw;
+  color:white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.service-title {
+  font-size: 12vh;
+}
+
+.service-explain {
+  font-size: 2.5vh;
+  line-height: 40px;
+}
+
+/* 商品一覧 */
+
+.foodracks-contents {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.foodracks-contents>.title {
+  font-size: 8vh;
+  line-height: 1.4;
+  font-weight: bold;
+  color: white;
+  margin: 5vh ;
+}
+
+.foodracks-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.foodracks-lists>.list {
+  width: 100vh;
+  padding: 5vw;
+  background-color:green;
+}
+
+
+.foodracks-img-content {
+  position: relative;
+}
+
+.foodracks-img {
+  width: 90vh;
+  height: 90vh;
+}
+
+.foodracks-info {
+  background-color:orange;
+  color:black;
+  width:49vw;
+}
+
+.foodracks-name {
+  font-size: 5vh;
+}
+
+.foodracks-memo {
+  font-size: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-img{
+  width: 90vh;
+  height: 90vh;
+}
+
+.food-info{
+  background-color:orange;
+  color:black;
+  width:49vw;
+}
+
+.food-name{
+  font-size: 5vh;
+}
+
+.food-memo{
+  font-size: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 599px) {
+
+  .main {
+    flex-direction: column;
+   
+  }
+  
+  .service-title {
+    font-size: 8.5vh;
+  }
+  
+  /* 商品一覧 */
+  
+  .foodracks-contents {
+    
+  }
+  
+  .foodracks-contents>.title {
+    font-size: 4vh;
+    line-height: 1.4;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .foodracks-lists {
+    width: 100%;
+  }
+  
+  .foodracks-lists>.list {
+    width: 100%;
+    padding: 1vw;
+    background-color:green;
+    }
+  
+  
+  .foodracks-img-content {
+    position: relative;
+  }
+  
+  .foodracks-img {
+    width: 40vw;
+    height: 40vh;
+  }
+  
+  .foodracks-info {
+    background-color:orange;
+    color:black;
+    padding: 1vw;
+  }
+  
+  .foodracks-name {
+    font-size: 3vh;
+  }
+  
+  .foodracks-memo {
+    font-size: 3vh;
+  }
+  
+  .food-img{
+    width: 40vw;
+    height: 40vh;
+  }
+  
+  .food-info{
+    background-color:orange;
+    color:black;
+    padding: 1vw;
+    width: 100%;
+  }
+  
+  .food-name{
+    font-size: 3vh;
+  }
+  
+  .food-memo{
+    font-size: 3vh;
+    }
+  
+}

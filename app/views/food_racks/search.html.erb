@@ -1,0 +1,9 @@
+<%= form_with(url: search_food_racks_path, local: true, method: :get, class: "search-form") do |form| %>
+    <%= form.text_field :keyword, class: "input-box" %>
+    <%= form.submit "検索",class: "search-button" %>
+<% end %>
+<div class="contents row">
+  <% @food_racks.each do |food_rack| %>
+    <%= render partial: "food_rack", locals: { food_rack: food_rack } %>
+  <% end %>
+</div>

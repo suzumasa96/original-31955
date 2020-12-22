@@ -8,3 +8,15 @@
 .footer>p {
   font-size: 1px;
 }
+
+@media (max-width: 599px) {
+  .logo-white {
+    width: 100%;
+    vertical-align: bottom;
+  }
+  
+  .footer>p {
+    font-size: 1px;
+  }
+  
+}
