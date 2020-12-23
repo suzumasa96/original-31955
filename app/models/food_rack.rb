@@ -2,6 +2,13 @@ class FoodRack < ApplicationRecord
   belongs_to :user
   has_one_attached :picture
 
+  def previous
+    FoodRack.where("id < ?", self.id).order("id DESC").first
+  end
+  def next
+    FoodRack.where("id > ?", self.id).order("id ASC").first
+  end
+  
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :category
   belongs_to :month

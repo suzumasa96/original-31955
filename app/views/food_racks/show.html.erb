@@ -2,13 +2,12 @@
 
 <div class="food-show">
   <div class="food-box">
-    <div class='food-img-content'>
+    <div class='item-img-content'>
       <%= image_tag @food_rack.picture ,class:"food-box-img" %>
     </div>
-    <%= link_to '食材情報変更', edit_food_rack_path, method: :get, class: "food-btn" %>
-    <%= link_to 'ごみ箱へ', food_rack_path, method: :delete, class:'food-destroy' %>
-
-  <div class="food-explain-box">
+      <%= link_to '食材情報変更', edit_food_rack_path, method: :get, class: "food-btn" %>
+      <%= link_to 'ごみ箱へ', food_rack_path, method: :delete, class:'food-destroy' %>
+    <div class="food-explain-box">
       <span><%= "食材情報" %></span>
     </div>
     <table class="detail-table">
@@ -23,11 +22,11 @@
         </tr>
         <tr>
           <th class="detail-food">保存場所</th>
-          <td class="detail-value"><%= @food_rack.category.name %></td>
+          <td class="detail-value"><%= @food_rack.category_id %></td>
         </tr>
         <tr>
           <th class="detail-food">賞味期限・消費期限</th>
-          <td class="detail-value"><%= @food_rack.month.name %><%= @food_rack.day.name %></td>
+          <td class="detail-value"><%= @food_rack.month_id %><%= @food_rack.day_id %></td>
         </tr>
       </tbody>
     </table>
@@ -35,11 +34,13 @@
     </div>
   </div>
   <div class="links">
-    <a href="#" class="change-item-btn">
-      ＜ 前の食材
-    </a>
-    <a href="#" class="change-item-btn">
-      後ろの食材 ＞
-    </a>
+    <% if @food_rack.previous.present? %>
+      <%= link_to "前の食材", food_rack_path(@food_rack.previous), class: "change-food-btn"%>
+    <% end %>
+    <% if @food_rack.next.present? %>
+      <%= link_to "次の食材",food_rack_path(@food_rack.next), class: "change-food-btn" %>
+    <% end %>
   </div>
 </div>
+
+<%= render "shared/footer" %>

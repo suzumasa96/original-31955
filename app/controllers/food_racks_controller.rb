@@ -33,6 +33,10 @@ class FoodRacksController < ApplicationController
     end
   end
 
+  def show
+    @food_rack = FoodRack.find(params[:id])
+  end
+
   private
 
   def foodrack_params
