@@ -38,7 +38,8 @@ ActiveRecord::Schema.define(version: 2020_12_16_102742) do
     t.string "food_name"
     t.string "picture"
     t.integer "category_id"
-    t.integer "food_deadline"
+    t.integer "month_id"
+    t.integer "day_id"
     t.text "memo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

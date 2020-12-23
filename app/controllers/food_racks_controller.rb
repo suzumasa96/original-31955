@@ -36,7 +36,7 @@ class FoodRacksController < ApplicationController
   private
 
   def foodrack_params
-    params.require(:food_rack).permit(:food_name,:picture,:category_id,:food_deadline,:memo).merge(user_id: current_user.id)
+    params.require(:food_rack).permit(:food_name,:picture,:category_id,:month_id,:day_id,:memo).merge(user_id: current_user.id)
   end
 
   def set_food_rack
