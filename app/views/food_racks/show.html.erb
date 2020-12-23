@@ -1,98 +1,39 @@
 <%= render "shared/header" %>
 
-<div class="item-show">
-  <div class="item-box">
-    <h2 class="name">
-      <%= @food_rack.food_name %>
-    </h2>
-    <div class='item-img-content'>
-      <%= image_tag @food_rack.picture ,class:"item-box-img" %>
-      <%# 商品が売れている場合は、sold outを表示しましょう >
-      <div class='sold-out'>
-        <span>Sold Out!!</span>
-      </div>
-      <%# //商品が売れている場合は、sold outを表示しましょう %>
+<div class="food-show">
+  <div class="food-box">
+    <div class='food-img-content'>
+      <%= image_tag @food_rack.picture ,class:"food-box-img" %>
     </div>
-    <%# <div class="item-price-box">
-      <span class="item-price">
-        ¥ 999,999,999
-      </span>
-      <span class="item-postage">
-        <%= '配送料負担' >
-      </span>
-    </div>
+    <%= link_to '食材情報変更', edit_food_rack_path, method: :get, class: "food-btn" %>
+    <%= link_to 'ごみ箱へ', food_rack_path, method: :delete, class:'food-destroy' %>
 
-    <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
-
-    <%= link_to '食材情報変更', edit_food_rack_path, method: :get, class: "item-red-btn" %>
-    <%# <p class='or-text'>or</p> %>
-    <%= link_to 'ごみ箱へ', food_rack_path, method: :delete, class:'item-destroy' %>
-
-    <%# 商品が売れていない場合はこちらを表示しましょう >
-    <%= link_to '購入画面に進む', "#" ,class:"item-red-btn"%>
-    <%# //商品が売れていない場合はこちらを表示しましょう %>
-
-
-    <%# //ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
-
-    <div class="item-explain-box">
+  <div class="food-explain-box">
       <span><%= "食材情報" %></span>
     </div>
     <table class="detail-table">
       <tbody>
         <tr>
-          <th class="detail-item">食材名</th>
+          <th class="detail-food">食材名</th>
           <td class="detail-value"><%= @food_rack.food_name %></td>
         </tr>
         <tr>
-          <th class="detail-item">メモ</th>
+          <th class="detail-food">メモ</th>
           <td class="detail-value"><%= @food_rack.memo %></td>
         </tr>
         <tr>
-          <th class="detail-item">保存場所</th>
+          <th class="detail-food">保存場所</th>
           <td class="detail-value"><%= @food_rack.category.name %></td>
         </tr>
         <tr>
-          <th class="detail-item">賞味期限・消費期限</th>
+          <th class="detail-food">賞味期限・消費期限</th>
           <td class="detail-value"><%= @food_rack.month.name %><%= @food_rack.day.name %></td>
         </tr>
-        <%# <tr>
-          <th class="detail-item">発送元の地域</th>
-          <td class="detail-value"><%= "発送元の地域" ></td>
-        </tr>
-        <tr>
-          <th class="detail-item">発送日の目安</th>
-          <td class="detail-value"><%= "発送日の目安" ></td>
-        </tr> %>
       </tbody>
     </table>
     <div class="option">
-      <%# <div class="favorite-btn">
-        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20">
-        <span>お気に入り 0</span>
-      </div>
-      <%# <div class="report-btn">
-        <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20">
-        <span>不適切な商品の通報</span>
-      </div> %>
     </div>
   </div>
-  <%# /商品の概要 %>
-
-  <%# <div class="comment-box">
-    <form>
-      <textarea class="comment-text"></textarea>
-      <p class="comment-warn">
-        相手のことを考え丁寧なコメントを心がけましょう。
-        <br>
-        不快な言葉遣いなどは利用制限や退会処分となることがあります。
-      </p>
-      <button type="submit" class="comment-btn">
-        <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25">
-        <span>コメントする<span>
-      </button>
-    </form>
-  </div> %>
   <div class="links">
     <a href="#" class="change-item-btn">
       ＜ 前の食材
@@ -101,9 +42,6 @@
       後ろの食材 ＞
     </a>
   </div>
-  <%# 詳細ページで表示されている商品のカテゴリー名を表示しましょう >
-  <a href=“#” class=‘another-item’><%= "商品のカテゴリー名" >をもっと見る</a>
-  <%# //詳細ページで表示されている商品のカテゴリー名を表示しましょう %>
 </div>
 
 <%= render "shared/footer" %>

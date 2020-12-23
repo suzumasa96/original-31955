@@ -7,7 +7,6 @@
     </h2>
   </div>
 
-  <%# 商品一覧 %>
   <div class='foodracks-contents'>
     <h2 class='title'>食材リスト</h2>
     <ul class='foodracks-lists'>
@@ -17,25 +16,17 @@
               <li class='list'>
 
                 <%= link_to food_rack_path(food_rack.id),method: :get do %>
-                <div class='foodracks-img-content'>
+                <div>
                   <%= image_tag food_rack.picture, class: "foodracks-img" %>
-
-                  <%# <div class='sold-out'>
-                    <span>Sold Out!!</span>
-                  </div> %>
                 </div>
                 <div class='foodracks-info'>
                   <h3 class='foodracks-name'>
-                    商品名:<%= food_rack.food_name %>
+                    食材名:<%= food_rack.food_name %>
                   </h3>
                   <div class='foodracks-memo'>
                     メモ:<%= food_rack.memo %>
                     <br>保存場所:<%= food_rack.category.name %>
                     <br>賞味期限・消費期限:<%= food_rack.month.name %><%= food_rack.day.name %>
-                    <%#<div class='star-btn'>
-                      <%= image_tag "star.png", class:"star-icon" >
-                      <span class='star-count'>0</span>
-                    </div> %>
                   </div>
                 </div>
                 <% end %>

@@ -43,7 +43,7 @@ a {
   font-size: 8vh;
   line-height: 1.4;
   font-weight: bold;
-  color: white;
+  color: black;
   margin: 5vh ;
 }
 
@@ -55,25 +55,19 @@ a {
 }
 
 .foodracks-lists>.list {
-  width: 100vh;
   padding: 5vw;
   background-color:green;
 }
 
-
-.foodracks-img-content {
-  position: relative;
-}
-
 .foodracks-img {
-  width: 90vh;
-  height: 90vh;
+  width: 70vw;
+  height: 70vh;
 }
 
 .foodracks-info {
   background-color:orange;
   color:black;
-  width:49vw;
+  width:70vw;
 }
 
 .foodracks-name {

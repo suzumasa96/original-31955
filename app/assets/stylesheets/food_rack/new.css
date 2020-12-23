@@ -33,6 +33,7 @@
   font-weight: bold;
   color: white;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 /* 共通 */
@@ -51,7 +52,7 @@
   margin-left: 8px;
   padding: 3px;
   border-radius: 2px;
-  color:red;
+  color: black;
   font-size: 12px;
   font-weight: bold;
 }
@@ -62,6 +63,7 @@
   margin-bottom: 10px;
   color: white;
   font-size: 20px;
+  text-align: center;
 }
 
 .select-box {
@@ -82,10 +84,6 @@
 .click-upload {
   margin: 15px 0;
   min-width: 250px;
-}
-
-.click-upload>p {
-  margin-bottom: 15px;
 }
 
 .new-items {
@@ -127,15 +125,15 @@
 
 
 /* 下部ボタン */
-.sell-btn-contents {
+.regist-btn-contents {
   width: 100%;
   text-align: center;
 }
 
-.sell-btn {
+.regist-btn {
   background: orange;
   border: 1px solid black;
-  color: #fff;
+  color: black;
   width: 100%;
   height: 50px;
   font-size: 14px;
@@ -145,7 +143,7 @@
 .back-btn {
   background: #aaa;
   border: 1px solid #aaa;
-  color: #fff;
+  color: black;
   padding: 15px 35%;
   text-decoration: none;
 }
@@ -155,6 +153,6 @@
   font-size: 13px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 599px) {
   
 }

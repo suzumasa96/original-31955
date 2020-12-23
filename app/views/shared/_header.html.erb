@@ -1,17 +1,11 @@
 <%# CSS・・・assets/stylesheets/shared/header.css %>
 <header class='top-page-header'>
-  <div class='search-bar-contents'>
+  <div class='logo-contents'>
 
     <%= link_to(root_path, class: 'logo-btn') do %>
       <span class='logo-btn-text'>FOODS REMIND</span>
       <%= image_tag 'information-160948__480吹き出し.webp' , size: '185x50' ,class: "logo-btn-icon" %>
     <% end %>
-
-      <%#<form class="search-form" action="#">
-      <input class='input-box' placeholder='検索'>
-      <button class="search-button">
-        <%= image_tag "search.png", class:"search-icon" >
-      </button> %>
   </div>
   <div class='nav'>
     <ul class='lists'>

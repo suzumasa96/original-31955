@@ -14,7 +14,6 @@
     <div class="img-upload">
       <div class="weight-bold-text">
         食材の写真
-        <span class="indispensable">任意</span>
       </div>
       <div class="click-upload">
         <%= f.file_field :picture, id:"item-image" %>
@@ -24,13 +23,11 @@
     <div class="new-items">
       <div class="weight-bold-text">
         食材名
-        <span class="indispensable">任意</span>
       </div>
       <%= f.text_area :food_name, class:"items-text", id:"item-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
       <div class="items-explain">
         <div class="weight-bold-text">
           メモ
-          <span class="indispensable">任意</span>
         </div>
         <%= f.text_area :memo, class:"items-text", id:"item-info", placeholder:"商品の説明（100文字まで）（特徴、素材、定価、注意点など）例）やや辛い、国産、200円、賞味期限短い" ,rows:"7" ,maxlength:"100" %>
       </div>
@@ -53,8 +50,8 @@
         <%= f.collection_select(:day_id, Day.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
       </div>
     </div>
-    <div class="sell-btn-contents">
-      <%= f.submit "食材を登録する" ,class:"sell-btn" %>
+    <div class="regist-btn-contents">
+      <%= f.submit "食材を登録する" ,class:"regist-btn" %>
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
   </div>
