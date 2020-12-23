@@ -154,5 +154,153 @@
 }
 
 @media (max-width: 599px) {
+  .foodracks-contents {
+    background-color: green;
+    font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 500px;
+  }
   
+  
+  .foodracks-header {
+    width: 40vw;
+    background: green;
+    text-align: center;
+    border-radius: 100%;
+    bottom: 32px;
+    right: 32px;
+    padding: 5vh 0;
+  }
+  
+  .foodracks-main {
+    background-color:green;
+    width: 70vw;
+    min-width: 450px;
+    padding: 10vh 15vw;
+  }
+  
+  .foodracks-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* 共通 */
+  .indispensable {
+    background: orange;
+    margin-left: 8px;
+    padding: 3px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .indispensable1 {
+    background:orange;
+    margin-left: 8px;
+    padding: 3px;
+    border-radius: 2px;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .weight-bold-text {
+    font-weight: bold;
+    min-width: 70px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .select-box {
+    height: 30px;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding-left: 20px;
+  }
+  
+  /* 出品画像 */
+  .img-upload {
+    flex-direction: column;
+    padding: 2vh 0;
+  }
+  
+  .click-upload {
+    margin: 15px 0;
+  }
+  
+  .new-items {
+    padding: 2vh 0;
+  }
+  
+  .items-text {
+    width: 50vw;
+    padding: 16px 16px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  .items-explain {
+    margin-top: 2vh;
+  }
+  
+  /* /商品名と商品説明 */
+  
+  /* 商品の詳細など */
+  .items-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 0;
+  }
+  
+  .items-detail>.form {
+    width: 300px;
+    padding: 2vh 0;
+  }
+  
+  .select-box {
+    margin: 2vh 0;
+  }
+  
+  /* /商品の詳細など */
+  
+  
+  /* 下部ボタン */
+  .regist-btn-contents {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .regist-btn {
+    background: orange;
+    border: 1px solid black;
+    color: black;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    margin-bottom: 4vh;
+  }
+  
+  .back-btn {
+    background: #aaa;
+    border: 1px solid #aaa;
+    color: black;
+    padding: 15px 35%;
+    text-decoration: none;
+  }
+  
+  
+  .inc {
+    font-size: 30px;
+  }
 }

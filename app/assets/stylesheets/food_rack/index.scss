@@ -103,80 +103,106 @@ a {
 
 @media (max-width: 599px) {
 
+  a {
+    text-decoration: none;
+  }
+  
   .main {
-    flex-direction: column;
-   
+    background:#f8f8f8;
+  }
+  
+  .title-contents {
+    width: 100vw;
+    background-image: image-url('wood-2142309_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15vh 15vw;
+    color:white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   }
   
   .service-title {
-    font-size: 8.5vh;
+    font-size: 50px;
+  }
+  
+  .service-explain {
+    font-size: 2.5vh;
+    line-height: 40px;
   }
   
   /* 商品一覧 */
   
   .foodracks-contents {
-    
+    width: 100vw;
+    background-color: #FFF;
   }
   
   .foodracks-contents>.title {
-    font-size: 4vh;
+    width: 30vw;
+    font-size: 30px;
     line-height: 1.4;
     font-weight: bold;
-    color: white;
+    color: black;
+    text-align: center;
+
   }
   
   .foodracks-lists {
-    width: 100%;
+    width: 100vw;
+    flex-direction: column;
   }
   
   .foodracks-lists>.list {
-    width: 100%;
-    padding: 1vw;
+    padding: 5vw;
     background-color:green;
-    }
-  
-  
-  .foodracks-img-content {
-    position: relative;
+    width: 100vw;
   }
   
   .foodracks-img {
-    width: 40vw;
+    width: 80vw;
     height: 40vh;
   }
   
   .foodracks-info {
     background-color:orange;
     color:black;
-    padding: 1vw;
+    width:80vw;
   }
   
   .foodracks-name {
-    font-size: 3vh;
+    font-size: 15px;
   }
   
   .foodracks-memo {
-    font-size: 3vh;
+    font-size: 15px;
   }
   
+
+
+
   .food-img{
-    width: 40vw;
-    height: 40vh;
+    width: 80vw;
+    height: 20vh;
   }
   
   .food-info{
     background-color:orange;
     color:black;
-    padding: 1vw;
-    width: 100%;
+    width:20vw;
   }
   
   .food-name{
-    font-size: 3vh;
+    font-size: 5vh;
   }
   
   .food-memo{
-    font-size: 3vh;
-    }
+    font-size: 5vh;
+    display: flex;
+    justify-content: space-between;
+  }
   
 }
