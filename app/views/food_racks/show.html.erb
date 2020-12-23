@@ -22,11 +22,11 @@
         </tr>
         <tr>
           <th class="detail-food">保存場所</th>
-          <td class="detail-value"><%= @food_rack.category_id %></td>
+          <td class="detail-value"><%= @food_rack.category.name %></td>
         </tr>
         <tr>
           <th class="detail-food">賞味期限・消費期限</th>
-          <td class="detail-value"><%= @food_rack.month_id %><%= @food_rack.day_id %></td>
+          <td class="detail-value"><%= @food_rack.month.name %><%= @food_rack.day.name %></td>
         </tr>
       </tbody>
     </table>
