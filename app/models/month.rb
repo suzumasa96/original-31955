@@ -1,6 +1,6 @@
 class Month < ActiveHash::Base
   self.data = [
-   { id: 1, name: '--' },
+   { id: 1, name: '-月-' },
    { id: 2, name: '１月' },
    { id: 3, name: '２月' },
    { id: 4, name: '３月' },

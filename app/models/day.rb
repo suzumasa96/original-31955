@@ -1,6 +1,6 @@
 class Day < ActiveHash::Base
   self.data = [
-    { id: 1, name: '--' },
+    { id: 1, name: '-日-' },
     { id: 2, name: '１日' },
     { id: 3, name: '２日' },
     { id: 4, name: '３日' },

@@ -29,7 +29,7 @@
 }
 
 .logo-btn-icon {
-  width: 50%;
+  width: 15%;
 }
 
 .nav {
@@ -100,14 +100,14 @@
   padding: 15px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 599px) {
   .top-page-header {
     width: 100vw;
     background-color: green;
   }
   
   .logo-contents {
-    display: flex;
+    align-items: center;
     flex-direction: column;
   }
   
@@ -166,7 +166,7 @@
     font-weight: bold;
     font-size: 30px;
     margin-right: 10vw;
-    background: white;
+    background: orange;
     text-align: center;
     border-radius: 4%;
     bottom: 32px;
@@ -180,7 +180,7 @@
     font-weight: bold;
     font-size: 30px;
 
-    background:white;
+    background:orange;
     text-align: center;
     border-radius: 4%;
     bottom: 32px;
@@ -190,3 +190,92 @@
   
 }
 
+@media (max-width: 420px) {
+  .top-page-header {
+    width: 100%;
+    background-color: green;
+  }
+  
+  .logo-contents {
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .logo-btn {
+    width: 100vw;
+    background: orange;
+    text-align: center;
+    border-radius: 4%;
+  }
+  
+  .logo-btn-text {
+    color: black;
+    font-size: 35px;
+    text-decoration: none;
+  }
+  
+  .logo-btn-icon {
+    width: 50%;
+  }
+  
+  .lists {
+    flex-direction: column;
+    list-style: none;
+  }
+  
+  .user-name {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 100px;
+    background: orange;
+    border: 1px solid orange;
+    border-radius: 4%;
+    padding: 15px;
+  }
+  
+  
+  .logout {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 20px;
+    background: orange;
+    text-align: center;
+    border-radius: 4%;
+    bottom: 32px;
+    padding: 15px;
+  }
+  
+  .login {
+    text-decoration: none;
+    line-height: 32px;
+    margin-right: 5vw;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10vw;
+    background: orange;
+    text-align: center;
+    border-radius: 4%;
+    bottom: 32px;
+    right: 10px;
+    padding: 15px;
+  }
+  
+  .sign-up {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+
+    background:orange;
+    text-align: center;
+    border-radius: 4%;
+    bottom: 32px;
+    right: 10px;
+    padding: 15px;
+  }
+  
+}

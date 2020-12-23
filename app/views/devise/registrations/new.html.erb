@@ -9,7 +9,7 @@
     </h1>
   </div>
 
-  <%= render 'shared/error_messages', model: f.object %>
+  <%#= render 'shared/error_messages', model: f.object %>
 
   <div class="form-group">
     <div class='form-text-wrap'>
@@ -78,17 +78,9 @@
     </div>
     <p class='info-text'>※ 本人情報は正しく入力してください。</p>
   </div>
-  <%# <div class="form-group">
-    <h2 class='form-bottom-text'>
-      「会員登録」のボタンを押すことにより、
-      <span>利用規約</span>
-      <br>に同意したものとみなします
-    </h2>
-  </div> %>
   <div class='register-btn'>
     <%= f.submit "会員登録" ,class:"register-red-btn" %>
   </div>
-  <%# <p class='register-info'>本人情報の登録について</p> %>
 </div>
 <% end %>
 

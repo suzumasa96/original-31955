@@ -56,7 +56,7 @@
 }
 
 .detail-food {
-  width: 20%;
+  width: 50%;
   background-color:white;
   border: 1px solid orange;
   font-size: 20px;
@@ -64,7 +64,7 @@
 }
 
 .detail-value {
-  width: 80%;
+  width: 50%;
   padding: 20px;
   background-color:gray;
   border: 1px solid orange;
@@ -94,7 +94,7 @@
 @media (max-width: 599px) {
   .food-show {
     background-color: green;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +102,7 @@
   
   .food-box {
     background-color:green;
-    min-width: 100vw;
+    min-width: 100%;
     padding: 1vh 15vw;
     display: flex;
     flex-direction: column;
@@ -110,7 +110,7 @@
   }
   
   .food-box-img {
-    width: 60vw;
+    width: 100%;
     background-color: orange;
     object-fit: contain;
   }
@@ -142,19 +142,19 @@
   
   .detail-table {
     margin-bottom: 30px;
-    width: 70vw;
+    width: 100%;
   }
   
   .detail-food {
-    width: 20vw;
+    width: 50%;
     background-color:white;
     border: 1px solid orange;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
   }
   
   .detail-value {
-    width: 20vw;
+    width: 50%;
     padding: 20px;
     background-color:gray;
     border: 1px solid orange;
@@ -181,4 +181,13 @@
     color: orange;
   }
   
+}
+
+@media (max-width: 599px) {
+
+  .change-item-btn {
+    font-size: 15px;
+    text-decoration: none;
+    color: orange;
+  }
 }
