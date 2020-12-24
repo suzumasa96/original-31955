@@ -3,15 +3,18 @@
 
   <div class='title-contents'>
     <h2 class='service-title'>
-      食材の期限を管理
+      長期保存食材の管理
     </h2>
+    <div class='service-explain'>
+      食材棚や冷蔵庫の奥に秘められた食材達を管理します
+    </div>
   </div>
   <div class='foodracks-contents'>
     <h2 class='title'>食材リスト</h2>
     <ul class='foodracks-lists'>
       <% if user_signed_in? %>
         <% @food_racks.each do |food_rack|%>
-            <% if current_user.id == food_rack.user_id%>
+            <% if current_user.id == food_rack.user_id %>
               <li class='list'>
 
                 <%= link_to food_rack_path(food_rack.id),method: :get do %>
@@ -38,12 +41,12 @@
             <%= image_tag "チキンラーメン.jpg", class: "food-img" %>
             <div class='food-info'>
               <h3 class='food-name'>
-                食材を登録してください
+                <p>食材を登録してください</p>
               </h3>
               <div class='food-memo'>
-                メモ:<%= "美味い" %>
-                <br>保存場所:<%= "食材棚A" %>
-                <br>賞味期限・消費期限:<%= "２月６日" %>
+                <p>メモ:</p><%= "美味い" %>
+                <br><p>保存場所:</p><%= "食材棚A" %>
+                <br></p>賞味期限・消費期限:</p><%= "２月６日" %>
               </div>
             </div>
             <% end %>
@@ -53,7 +56,7 @@
   </div>
 </div>
 <%= link_to(new_food_rack_path, class: 'save-btn') do %>
-  <span class='save-btn-text'>食材の追加</span>
+  <span class='save-btn-text'>食材を追加</span>
   <%= image_tag 'tomato-4984619_1280.png' , size: '185x50' ,class: "save-btn-icon" %>
 <% end %>
 <%= render "shared/footer" %>

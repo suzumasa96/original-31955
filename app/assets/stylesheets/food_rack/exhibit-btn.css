@@ -2,7 +2,8 @@
   width: 120px;
   background:orange;
   text-align: center;
-  border-radius: 4%;
+  border: 1px solid black;
+  border-radius: 100%;
   bottom: 32px;
   right: 32px;
   position: fixed;
@@ -12,7 +13,7 @@
 .save-btn-text {
   color: black;
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   margin-bottom: 5px;
   font-weight: bold;
@@ -20,4 +21,31 @@
 
 .save-btn-icon {
   width: 40%;
+}
+
+@media (max-width: 599px) {
+  .save-btn {
+    width: 70px;
+    background:orange;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 100%;
+    bottom: 16px;
+    right: 16px;
+    position: fixed;
+    padding: 7px;
+  }
+  
+  .save-btn-text {
+    color: black;
+    display: block;
+    font-size: 8px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .save-btn-icon {
+    width: 30%;
+  }
 }

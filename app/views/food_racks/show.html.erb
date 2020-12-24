@@ -5,7 +5,7 @@
     <div class='item-img-content'>
       <%= image_tag @food_rack.picture ,class:"food-box-img" %>
     </div>
-      <%= link_to '食材情報変更', edit_food_rack_path, method: :get, class: "food-btn" %>
+      <%= link_to '情報の変更', edit_food_rack_path, method: :get, class: "food-btn" %>
       <%= link_to 'ごみ箱へ', food_rack_path, method: :delete, class:'food-destroy' %>
     <div class="food-explain-box">
       <span><%= "食材情報" %></span>
@@ -13,7 +13,7 @@
     <table class="detail-table">
       <tbody>
         <tr>
-          <th class="detail-food">食材名</th>
+          <th class="detail-food">食材の名前</th>
           <td class="detail-value"><%= @food_rack.food_name %></td>
         </tr>
         <tr>
@@ -34,11 +34,11 @@
     </div>
   </div>
   <div class="links">
-    <% if @food_rack.previous.present? %>
-      <%= link_to "前の食材", food_rack_path(@food_rack.previous), class: "change-food-btn"%>
+    <% if @food_rack.previous.present? && current_user.id == @food_rack.user_id %>
+      <%= link_to "前の食材", food_rack_path(@food_rack.previous), class: "prev-food-left-btn"%>
     <% end %>
-    <% if @food_rack.next.present? %>
-      <%= link_to "次の食材",food_rack_path(@food_rack.next), class: "change-food-btn" %>
+    <% if @food_rack.next.present? && current_user.id == @food_rack.user_id%>
+      <%= link_to "次の食材",food_rack_path(@food_rack.next), class: "next-food-right-btn" %>
     <% end %>
   </div>
 </div>

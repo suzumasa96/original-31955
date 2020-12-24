@@ -1,8 +1,7 @@
 .second-fotter {
   width: 100%;
-  min-width: 800px;
   height: 200px;
-  background-color:green;
+  background-color:#c0db75;
   display: flex;
   flex-direction: column;
 }

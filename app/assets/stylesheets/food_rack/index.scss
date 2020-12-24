@@ -3,7 +3,7 @@ a {
 }
 
 .main {
-  background:#f8f8f8;
+  background:#c0db75;
 }
 
 .title-contents {
@@ -12,21 +12,22 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 15vh 15vw;
+  align-items: center;
+  padding: 5vh 10vw;
   color:white;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  border: 5px solid black;
 }
 
 .service-title {
   font-size: 12vh;
+  color:#c0db75;
 }
 
 .service-explain {
-  font-size: 2.5vh;
+  font-size: 5vh;
   line-height: 40px;
+  color:#c0db75;
 }
 
 /* 商品一覧 */
@@ -36,14 +37,13 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10vh 0;
 }
 
 .foodracks-contents>.title {
   font-size: 8vh;
-  line-height: 1.4;
   font-weight: bold;
-  color: black;
+  color: #c0db75;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   margin: 5vh ;
 }
 
@@ -56,18 +56,21 @@ a {
 
 .foodracks-lists>.list {
   padding: 5vw;
-  background-color:green;
+  background-color:#c0db75;
+  border: 3px solid black;
 }
 
 .foodracks-img {
   width: 70vw;
   height: 70vh;
+  border: 2px solid black;
 }
 
 .foodracks-info {
-  background-color:orange;
+  background-color:#c0db75;
   color:black;
   width:70vw;
+  border: 2px solid black;
 }
 
 .foodracks-name {
@@ -81,14 +84,16 @@ a {
 }
 
 .food-img{
-  width: 90vh;
-  height: 90vh;
+  width: 70vw;
+  height: 70vh;
+  border: 2px solid black;
 }
 
 .food-info{
-  background-color:orange;
+  background-color:#c0db75;
   color:black;
-  width:49vw;
+  width:70vw;
+  border: 2px solid black;
 }
 
 .food-name{
@@ -102,89 +107,109 @@ a {
 }
 
 @media (max-width: 599px) {
-
   a {
     text-decoration: none;
   }
   
   .main {
-    background:#f8f8f8;
+    background:#c0db75;
   }
   
   .title-contents {
-    width: 100%;
+    width: 135vw;
+    background-image: image-url('wood-2142309_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    align-items: center;
+    padding: 5vh 5px;
     color:white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    border: 5px solid black;
   }
   
   .service-title {
-    font-size: 30px;
+    font-size: 25px;
+    color:#c0db75;
+  }
+  
+  .service-explain {
+    font-size: 16px;
+    line-height: 30px;
+    color:#c0db75;
   }
   
   /* 商品一覧 */
   
   .foodracks-contents {
-    width: 50%;
+    width: 10%;
     background-color: #FFF;
   }
   
   .foodracks-contents>.title {
-    width: 50%;
-    font-size: 20px;
+    width:50%;
+    font-size: 30px;
+    line-height: 1.4vh;
     font-weight: bold;
-    color: black;
-
+    color: #c0db75;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    text-align: center;
   }
   
   .foodracks-lists {
-    width: 100%;
+    width: 50%;
     flex-direction: column;
   }
   
   .foodracks-lists>.list {
-    padding: 5vw;
-    background-color:white;
-    width: 100%;
+    background-color:#c0db75;
+    border: 3px solid black;
   }
   
   .foodracks-img {
-    width: 50%;
-    height: 25%;
+    width: 50vw;
+    height: 20vh;
+    border: 2px solid black;
   }
   
   .foodracks-info {
-    background-color:orange;
+    background-color:#c0db75;
     color:black;
-    width:50%;
+    width:50vw;
+    border: 2px solid black;
   }
   
   .foodracks-name {
-    font-size: 15px;
+    font-size: 13px;
   }
   
   .foodracks-memo {
-    font-size: 15px;
+    font-size: 13px;
   }
   
-
-
-
   .food-img{
-    width: 80vw;
-    height: 40vh;
+    width: 50vw;
+    height: 20vh;
+    border: 2px solid black;
   }
   
   .food-info{
-    background-color:orange;
+    background-color:#c0db75;
     color:black;
-    width:80vw;
+    width:50vw;
+    border: 2px solid black;
   }
   
   .food-name{
-    font-size: 15px;
+    font-size: 13px;
   }
   
   .food-memo{
-    font-size: 15px;
+    font-size: 13vh;
+    display: flex;
+    justify-content: space-between;
   }
-  
+  .p{
+    font-size: 13px;
+  }
 }

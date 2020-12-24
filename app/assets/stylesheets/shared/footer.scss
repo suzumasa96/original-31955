@@ -1,10 +1,22 @@
-/* 下部広告部分 */
-
-.logo-white {
-  width: 0vh;
-  vertical-align: bottom;
+.background {
+  background-color: #c0db75;
+  height: 20vh;
 }
 
-.footer>p {
-  font-size: 1px;
+.inc {
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 599px) {
+  .background {
+    background-color: #c0db75;
+    height: 20vh;
+    width:100%;
+  }
+  
+  .inc {
+    font-size: 30px;
+    text-align: center;
+  }
 }
