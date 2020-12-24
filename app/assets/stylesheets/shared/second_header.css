@@ -30,7 +30,7 @@
 @media(max-width: 599px){
   .second-header {
     width: 100%;
-    background-color: ;
+    background-color:#c0db75;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,19 +39,16 @@
   .logo2-btn {
     width: 100% ;
     align-items: center;
-    background: #c0db75;
+    background: white;
     text-align: center;
-  
   }
-  
   .logo2-btn-text {
-    color: #fff;
+    color: black;
     display: block;
     font-size: 20px;
     text-decoration: none;
     margin-bottom: 5px;
   }
-  
   .logo2-btn-icon {
     width: 20vw;
   }
