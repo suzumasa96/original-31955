@@ -17,6 +17,7 @@ app/assets/stylesheets/items/new.css %>
     <div class="img-upload">
       <div class="weight-bold-text">
         食材の写真
+        <span class="indispensable1">必須</span>
       </div>
       <div class="click-upload">
         <%= f.file_field :picture, id:"item-image" %>
@@ -27,12 +28,12 @@ app/assets/stylesheets/items/new.css %>
       <div class="weight-bold-text">
         食材の名前
       </div>
-      <%= f.text_area :food_name, class:"items-text", id:"item-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
+      <%= f.text_area :food_name, class:"items-text", id:"item-name", placeholder:"食材の名前(20文字まで)", maxlength:"20" %>
       <div class="items-explain">
         <div class="weight-bold-text">
           メモ
         </div>
-        <%= f.text_area :memo, class:"items-text", id:"item-info", placeholder:"商品の説明（100文字まで）（特徴、素材、定価、注意点など）例）やや辛い、国産、200円、賞味期限短い" ,rows:"7" ,maxlength:"100" %>
+        <%= f.text_area :memo, class:"items-text", id:"item-info", placeholder:"100文字まで（特徴、素材、定価、注意点など自由にご記入ください）　例）やや辛い、国産、200円、賞味期限短い" ,rows:"7" ,maxlength:"100" %>
       </div>
     </div>
 
