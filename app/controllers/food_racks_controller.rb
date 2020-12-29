@@ -12,7 +12,8 @@ class FoodRacksController < ApplicationController
 
   def create
     @food_rack = FoodRack.new(foodrack_params)
-    if @food_rack.save
+    if @food_rack.valid?
+      @food_rack.save
       redirect_to root_path
     else
       render :new

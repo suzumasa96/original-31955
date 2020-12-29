@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        name: ニックネーム
+      food_rack:
+        picture: 食材の写真
+        category_id: 保存場所
+        month_id: 保存月
+        day_id: 保存日
