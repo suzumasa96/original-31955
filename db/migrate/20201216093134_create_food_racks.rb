@@ -5,6 +5,7 @@ class CreateFoodRacks < ActiveRecord::Migration[6.0]
       t.string  :food_name
       t.string  :picture
       t.integer :category_id
+      t.integer :year_id
       t.integer :month_id
       t.integer :day_id
       t.text    :memo

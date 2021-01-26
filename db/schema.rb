@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2020_12_16_102742) do
     t.string "food_name"
     t.string "picture"
     t.integer "category_id"
+    t.integer "year_id"
     t.integer "month_id"
     t.integer "day_id"
     t.text "memo"

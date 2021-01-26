@@ -49,6 +49,7 @@ app/assets/stylesheets/items/new.css %>
           賞味期限・消費期限
           <span class="indispensable1">必須</span>
         </div>
+        <%= f.collection_select(:year_id, Year.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
         <%= f.collection_select(:month_id, Month.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
         <%= f.collection_select(:day_id, Day.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
       </div>
