@@ -6,5 +6,6 @@ ja:
       food_rack:
         picture: 食材の写真
         category_id: 保存場所
+        year_id: 保存年
         month_id: 保存月
         day_id: 保存日
